@@ -4,7 +4,7 @@ on: [workflow_dispatch]
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    environment: production      # ← 关键：job 指向 production 环境
+    environment: production
     steps:
       - name: prove the job executed
         run: echo "==== JOB RAN, ref=$GITHUB_REF ===="
